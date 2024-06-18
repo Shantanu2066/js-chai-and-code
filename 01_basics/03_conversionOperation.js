@@ -26,3 +26,19 @@ console.log(isLoggedIn3) //would return false for empty string
 
 let isLoggedIn4 = Boolean("Shantanu")
 console.log(isLoggedIn4) //true
+
+//one interesting thing
+
+console.log(null > 0) //false
+console.log(null == 0) //false
+console.log(null >= 0) // true
+
+/*
+
+This happens because equality check and conversion operator work differently in JS
+
+When comparing null to 0 using ==, JavaScript does not convert null to a number. Instead, it checks if null is equal to 0, which it is not
+
+When using a comparison operator, JavaScript converts null to a number before making the comparison. The null value is converted to 0 when it's involved in a numeric comparison
+
+*/
